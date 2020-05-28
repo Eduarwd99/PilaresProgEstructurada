@@ -35,6 +35,7 @@
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtResultado = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +54,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(29, 63);
+            this.label2.Location = new System.Drawing.Point(29, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 16);
             this.label2.TabIndex = 1;
@@ -64,7 +65,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(29, 120);
+            this.label3.Location = new System.Drawing.Point(29, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 16);
             this.label3.TabIndex = 2;
@@ -72,7 +73,7 @@
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(27, 139);
+            this.txtNombres.Location = new System.Drawing.Point(27, 81);
             this.txtNombres.MaxLength = 30;
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(171, 20);
@@ -80,7 +81,7 @@
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(27, 82);
+            this.txtApellidos.Location = new System.Drawing.Point(27, 139);
             this.txtApellidos.MaxLength = 30;
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(171, 20);
@@ -99,19 +100,31 @@
             // 
             // txtResultado
             // 
-            this.txtResultado.Location = new System.Drawing.Point(231, 62);
+            this.txtResultado.Location = new System.Drawing.Point(220, 61);
             this.txtResultado.MaxLength = 30;
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtResultado.Size = new System.Drawing.Size(201, 161);
+            this.txtResultado.Size = new System.Drawing.Size(201, 156);
             this.txtResultado.TabIndex = 6;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNombre.Location = new System.Drawing.Point(56, 230);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(50, 13);
+            this.lblNombre.TabIndex = 7;
+            this.lblNombre.Text = "Nombre";
             // 
             // FormDatosPersonales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 239);
+            this.ClientSize = new System.Drawing.Size(470, 252);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtApellidos);
@@ -136,5 +149,6 @@
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.TextBox txtResultado;
+        private System.Windows.Forms.Label lblNombre;
     }
 }

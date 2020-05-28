@@ -52,8 +52,29 @@ namespace PilaresProgEstructurada
             {
                 aux = aux + "b mayor que a";
             }
-
             this.txtResultado.Text = aux;
+            //Llamada de la funcion
+            this.getSaludos(saludo);
+            this.lblNombre.Text = this.lblNombre.Text + " ---> " + this.getcalculo(a, b).ToString();
         }
+        //Procedimientos - Funciones
+        //Procedimiento: Funcion que no retorna valor (void)
+        //Las Funciones devuelven un valor
+        void getSaludos(string nombres)
+        {
+            this.lblNombre.Text = "Uso de Funcion que no devuelve valor (" + nombres + ")";
+        }
+        //Funcion que devuelve valor
+        double getcalculo(int a, int b)
+        {
+            double resultado = 0;
+            resultado = (a * 10) / (b * 2.5);
+            return resultado;
+        }
+        //Tipos de Datos en C#
+        //Operadores Logicos
+        // " Relacionales
+        // " Aritmeticos
+        //Estructuras Repetitivas
     }
 }
