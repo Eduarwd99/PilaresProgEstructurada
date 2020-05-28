@@ -42,7 +42,7 @@ namespace PilaresProgEstructurada
             }
             
             //Estructuras selectivas
-            int a = 100;
+            int a = 100; 
             int b = 20;
             if(a>b)
             {
