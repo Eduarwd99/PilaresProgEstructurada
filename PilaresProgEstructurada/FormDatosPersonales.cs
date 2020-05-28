@@ -40,6 +40,19 @@ namespace PilaresProgEstructurada
             {
                 aux = aux + saludo + System.Environment.NewLine;
             }
+            
+            //Estructuras selectivas
+            int a = 100;
+            int b = 20;
+            if(a>b)
+            {
+                aux = aux + "a mayor que b";
+            }
+            else
+            {
+                aux = aux + "b mayor que a";
+            }
+
             this.txtResultado.Text = aux;
         }
     }
