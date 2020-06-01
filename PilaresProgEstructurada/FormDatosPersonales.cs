@@ -73,8 +73,39 @@ namespace PilaresProgEstructurada
         }
         //Tipos de Datos en C#
         //Operadores Logicos
-        // " Relacionales
+        // " Relacionales 
         // " Aritmeticos
-        //Estructuras Repetitivas
+        //Estructuras Repetitivas 
+        void ejemploPasoValor(int x)
+        {
+            x = x + 100;
+            MessageBox.Show("El nuevo valor de x: " + x.ToString());
+        }
+        void ejemploPasoReferencia(ref int a)
+        {
+            a = a + 100;
+            MessageBox.Show("El nuevo valor de x: " + a.ToString());
+        }
+        void ejemploParametroOpcional(int x, int y = 10)
+        {
+            x = x + y;
+            MessageBox.Show("Parametro opcional " + y.ToString());
+            MessageBox.Show("El nuevo valor de x: " + x.ToString());
+        }
+
+        private void btnPasoPorValor_Click(object sender, EventArgs e)
+        {
+            int x = 5, y = 200;
+            this.ejemploParametroOpcional(x, y);
+            //ejemploPasoValor(x);
+            //this.txtValor.Text = x.ToString();
+        }
+
+        private void btnPasoPorReferencia_Click(object sender, EventArgs e)
+        {
+            int x = 5;
+            ejemploPasoReferencia(ref x);
+            this.txtValor.Text = x.ToString();
+        }
     }
 }

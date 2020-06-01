@@ -18,5 +18,6 @@ namespace PilaresProgEstructurada
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormDatosPersonales());
         }
+
     }
 }

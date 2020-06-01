@@ -36,6 +36,9 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.btnPasoPorValor = new System.Windows.Forms.Button();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.btnPasoPorReferencia = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -105,7 +108,7 @@
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtResultado.Size = new System.Drawing.Size(201, 156);
+            this.txtResultado.Size = new System.Drawing.Size(227, 156);
             this.txtResultado.TabIndex = 6;
             // 
             // lblNombre
@@ -113,17 +116,47 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNombre.Location = new System.Drawing.Point(56, 230);
+            this.lblNombre.Location = new System.Drawing.Point(83, 231);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(50, 13);
             this.lblNombre.TabIndex = 7;
             this.lblNombre.Text = "Nombre";
             // 
+            // btnPasoPorValor
+            // 
+            this.btnPasoPorValor.Location = new System.Drawing.Point(32, 256);
+            this.btnPasoPorValor.Name = "btnPasoPorValor";
+            this.btnPasoPorValor.Size = new System.Drawing.Size(116, 23);
+            this.btnPasoPorValor.TabIndex = 8;
+            this.btnPasoPorValor.Text = "Paso Por Valor";
+            this.btnPasoPorValor.UseVisualStyleBackColor = true;
+            this.btnPasoPorValor.Click += new System.EventHandler(this.btnPasoPorValor_Click);
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(322, 258);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(125, 20);
+            this.txtValor.TabIndex = 9;
+            // 
+            // btnPasoPorReferencia
+            // 
+            this.btnPasoPorReferencia.Location = new System.Drawing.Point(166, 256);
+            this.btnPasoPorReferencia.Name = "btnPasoPorReferencia";
+            this.btnPasoPorReferencia.Size = new System.Drawing.Size(135, 22);
+            this.btnPasoPorReferencia.TabIndex = 10;
+            this.btnPasoPorReferencia.Text = "Paso Por Referencia";
+            this.btnPasoPorReferencia.UseVisualStyleBackColor = true;
+            this.btnPasoPorReferencia.Click += new System.EventHandler(this.btnPasoPorReferencia_Click);
+            // 
             // FormDatosPersonales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 252);
+            this.ClientSize = new System.Drawing.Size(459, 295);
+            this.Controls.Add(this.btnPasoPorReferencia);
+            this.Controls.Add(this.txtValor);
+            this.Controls.Add(this.btnPasoPorValor);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnAceptar);
@@ -150,5 +183,8 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Button btnPasoPorValor;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.Button btnPasoPorReferencia;
     }
 }
