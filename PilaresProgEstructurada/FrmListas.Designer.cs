@@ -81,6 +81,7 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
             this.Name = "FrmListas";
+            this.Text = "Formulario Listas";
             this.ResumeLayout(false);
             this.PerformLayout();
 
