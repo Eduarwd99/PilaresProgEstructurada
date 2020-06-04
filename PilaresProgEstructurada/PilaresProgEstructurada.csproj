@@ -52,6 +52,12 @@
     <Compile Include="FormDatosPersonales.Designer.cs">
       <DependentUpon>FormDatosPersonales.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBinario.Designer.cs">
+      <DependentUpon>frmBinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmListas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormDatosPersonales.resx">
       <DependentUpon>FormDatosPersonales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBinario.resx">
+      <DependentUpon>frmBinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListas.resx">
       <DependentUpon>FrmListas.cs</DependentUpon>
